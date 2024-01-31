@@ -1,0 +1,15 @@
+configuration {
+    font: "MesloLGM Nerd Font 12";
+    line-margin: 12;
+}
+
+@theme "~/.config/rofi/nord.rasi"
+
+listview {
+	lines: 8;
+	columns: 1;
+}
+
+window {
+	width: 40%;
+}

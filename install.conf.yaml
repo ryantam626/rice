@@ -10,3 +10,5 @@
         path: dotfiles/zsh/.p10k.zsh
     ~/.zshrc:
         path: dotfiles/zsh/.zshrc
+    ~/.config/rofi:
+        path: dotfiles/rofi
