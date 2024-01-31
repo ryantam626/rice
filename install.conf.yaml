@@ -2,3 +2,7 @@
     link:
       relink: true
 
+- link:
+    ~/.config/nvim:
+        path: dotfiles/nvim
+        force: true
