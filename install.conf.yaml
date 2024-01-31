@@ -6,3 +6,7 @@
     ~/.config/nvim:
         path: dotfiles/nvim
         force: true
+    ~/.p10k.zsh:
+        path: dotfiles/zsh/.p10k.zsh
+    ~/.zshrc:
+        path: dotfiles/zsh/.zshrc
