@@ -1,0 +1,5 @@
+set clipboard^=unnamedplus,unnamed
+
+set hlsearch
+set ignorecase
+set smartcase

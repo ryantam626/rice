@@ -17,3 +17,5 @@
         path: dotfiles/rofi
     ~/.config/dconf:
         path: dotfiles/dconf
+    ~/.ideavimrc:
+        path: dotfiles/idea/.ideavimrc
