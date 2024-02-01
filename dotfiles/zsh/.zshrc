@@ -11,9 +11,14 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 DISABLE_AUTO_TITLE="true"
 export EDITOR="nvim"
 
-plugins=(git)
+plugins=(git z fzf zsh-completions zsh-syntax-highlighting docker docker-compose task)
+zstyle ':completion:*:*:make:*' tag-order 'targets'
+autoload -Uz compinit && compinit
+
 
 source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+alias vim=nvim
