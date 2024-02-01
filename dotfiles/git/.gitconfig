@@ -1,0 +1,14 @@
+[user]
+	email = ryantam626@gmail.com
+	name = Ryan Tam
+[stash]
+	showPatch = true
+[rebase]
+	autosquash = true
+[pull]
+	rebase = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

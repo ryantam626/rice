@@ -10,5 +10,8 @@
         path: dotfiles/zsh/.p10k.zsh
     ~/.zshrc:
         path: dotfiles/zsh/.zshrc
+        force: true
+    ~/.gitconfig:
+        path: dotfiles/git/.gitconfig
     ~/.config/rofi:
         path: dotfiles/rofi
