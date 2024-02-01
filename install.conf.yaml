@@ -15,3 +15,5 @@
         path: dotfiles/git/.gitconfig
     ~/.config/rofi:
         path: dotfiles/rofi
+    ~/.config/dconf:
+        path: dotfiles/dconf
