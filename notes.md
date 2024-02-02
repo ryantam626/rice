@@ -178,6 +178,15 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 sudo apt install gnome-tweaks gnome-shell-extensions -y
 sudo apt install chrome-gnome-shell -y
 
+## https://extensions.gnome.org/extension/1460/vitals/
+## https://extensions.gnome.org/extension/4290/disable-workspace-switch-animation-for-gnome-40/
+## https://extensions.gnome.org/extension/4356/top-bar-organizer/
+## https://extensions.gnome.org/extension/4412/advanced-alttab-window-switcher/
+## https://extensions.gnome.org/extension/4451/logo-menu/
+## https://extensions.gnome.org/extension/4627/focus-changer/
+## https://extensions.gnome.org/extension/5090/space-bar/
+## https://extensions.gnome.org/extension/744/hide-activities-button/
+
 
 # Install python and pyenv
 GLOBAL_PYTHON_VER="3.10.8"
@@ -194,11 +203,6 @@ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 # Install utils
 sudo pip3 install thefuck
 
-## https://extensions.gnome.org/extension/1460/vitals/
-## https://extensions.gnome.org/extension/4290/disable-workspace-switch-animation-for-gnome-40/
-## https://extensions.gnome.org/extension/4356/top-bar-organizer/
-## https://extensions.gnome.org/extension/4412/advanced-alttab-window-switcher/
-## https://extensions.gnome.org/extension/4451/logo-menu/
-## https://extensions.gnome.org/extension/4627/focus-changer/
-## https://extensions.gnome.org/extension/5090/space-bar/
-## https://extensions.gnome.org/extension/744/hide-activities-button/
+# Install kitty
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+sudo ln -s ~/.local/kitty.app/bin/kitty /usr/local/bin/kitty
