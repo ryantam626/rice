@@ -24,3 +24,6 @@
     ~/.config/gtk-4.0:
         path: dotfiles/gtk/gtk-4.0
         force: true
+    ~/.config/kitty:
+        path: dotfiles/kitty
+        force: true
