@@ -171,23 +171,18 @@ popd
 rm -rf /tmp/pycharm
 sudo ln -s ~/apps/pycharm-2023.3.3/bin/pycharm.sh /usr/local/bin/pycharm
 ```
-
-
-
 # Install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-
-
 
 # Gnome extensions
 sudo apt install gnome-tweaks gnome-shell-extensions -y
 sudo apt install chrome-gnome-shell -y
 
-
+## https://extensions.gnome.org/extension/1460/vitals/
+## https://extensions.gnome.org/extension/4290/disable-workspace-switch-animation-for-gnome-40/
 ## https://extensions.gnome.org/extension/4356/top-bar-organizer/
 ## https://extensions.gnome.org/extension/4412/advanced-alttab-window-switcher/
-## https://extensions.gnome.org/extension/744/hide-activities-button/
 ## https://extensions.gnome.org/extension/4451/logo-menu/
-## https://extensions.gnome.org/extension/1460/vitals/
+## https://extensions.gnome.org/extension/4627/focus-changer/
 ## https://extensions.gnome.org/extension/5090/space-bar/
-## https://extensions.gnome.org/extension/4290/disable-workspace-switch-animation-for-gnome-40/
+## https://extensions.gnome.org/extension/744/hide-activities-button/
