@@ -15,7 +15,6 @@ plugins=(git z fzf zsh-completions zsh-syntax-highlighting docker docker-compose
 zstyle ':completion:*:*:make:*' tag-order 'targets'
 autoload -Uz compinit && compinit
 
-
 source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -35,4 +34,14 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+# }}
+
+# pyenv {{
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+# }}
+
+# thefuck {{
+eval $(thefuck --alias)
 # }}
