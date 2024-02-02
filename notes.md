@@ -178,6 +178,22 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 sudo apt install gnome-tweaks gnome-shell-extensions -y
 sudo apt install chrome-gnome-shell -y
 
+
+# Install python and pyenv
+GLOBAL_PYTHON_VER="3.10.8"
+sudo apt install -y python3-pip
+
+sudo apt-get install --no-install-recommends make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev -y
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+
+/home/ryan/.pyenv/bin/pyenv install $GLOBAL_PYTHON_VER
+/home/ryan/.pyenv/bin/pyenv global $GLOBAL_PYTHON_VER
+
+/home/ryan/.pyenv/versions/$GLOBAL_PYTHON_VER/bin/pip install thefuck
+
+# Install utils
+sudo pip3 install thefuck
+
 ## https://extensions.gnome.org/extension/1460/vitals/
 ## https://extensions.gnome.org/extension/4290/disable-workspace-switch-animation-for-gnome-40/
 ## https://extensions.gnome.org/extension/4356/top-bar-organizer/
