@@ -34,16 +34,11 @@ require('lazy').setup({
   'tpope/vim-sleuth',
 
   {
-    -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
+    'shaunsingh/nord.nvim',
     priority = 1000,
     lazy = false,
     config = function()
-      require('onedark').setup {
-        -- Set a style preset. 'dark' is default.
-        style = 'dark', -- dark, darker, cool, deep, warm, warmer, light
-      }
-      require('onedark').load()
+      require('nord').set()
     end,
   },
 
@@ -74,6 +69,7 @@ require('lazy').setup({
   { 'numToStr/Comment.nvim', opts = {} },
 
 })
+
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
