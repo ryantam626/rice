@@ -19,8 +19,6 @@
         path: dotfiles/dconf
     ~/.ideavimrc:
         path: dotfiles/idea/.ideavimrc
-    ~/.themes:
-        path: dotfiles/themes
     ~/.config/gtk-4.0:
         path: dotfiles/gtk/gtk-4.0
         force: true
