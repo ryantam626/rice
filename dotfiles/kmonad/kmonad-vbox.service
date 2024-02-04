@@ -1,8 +1,8 @@
 [Unit]
-Description=Kmonad A1 gaming keyboard remap
+Description=Kmonad Virtualbox keyboard remap
 
 [Service]
-Environment=KBD_DEV=/dev/input/event2
+Environment=KBD_DEV=/dev/input/by-path/platform-i8042-serio-0-event-kbd
 Restart=always
 RestartSec=60
 ExecStart=/home/ryan/rice/scripts/kmonad-wrapper.sh
