@@ -26,3 +26,6 @@
     ~/.config/kitty:
         path: dotfiles/kitty
         force: true
+    ~/.local/share/themes/ryan-theme:
+        path: dotfiles/themes/ryan-theme
+        force: true
