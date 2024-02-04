@@ -6,3 +6,4 @@ xdg-open https://extensions.gnome.org/extension/4451/logo-menu/
 xdg-open https://extensions.gnome.org/extension/4627/focus-changer/
 xdg-open https://extensions.gnome.org/extension/5090/space-bar/
 xdg-open https://extensions.gnome.org/extension/744/hide-activities-button/
+xdg-open https://extensions.gnome.org/extension/4688/focus-follows-workspace/
