@@ -183,7 +183,7 @@ install_pycharm() {
 install_gnome_extensions() {
 	info "Installing Gnome Extensions.\n"
 	$apt_install_quiet gnome-tweaks gnome-shell-extensions chrome-gnome-shell
-	warning "Gnome Extensions are not included here, remember to download them later.\n"
+	info "Gnome Extensions are not included here, remember to download them later.\n"
 }
 
 
