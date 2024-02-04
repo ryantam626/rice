@@ -1,0 +1,17 @@
+# Assume current user is already in the sudo group and is named `ryan`
+
+# Bootstrap install
+wget -O - https://raw.githubusercontent.com/ryantam626/rice/master/installers/bootstrapping.sh | shS
+
+# Clone this repo
+git clone https://github.com/ryantam626/rice.git rice
+cd rice
+
+# Install various programs
+./installers/install.sh
+# Install dotfiles
+./installers/install-dotfiles.sh
+
+# TODO: Make a wizard for kmonad config setup
+
+
