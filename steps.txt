@@ -1,7 +1,7 @@
 # Assume current user is already in the sudo group and is named `ryan`
 
 # Bootstrap install
-wget -O - https://raw.githubusercontent.com/ryantam626/rice/master/installers/bootstrapping.sh | shS
+wget -O - https://raw.githubusercontent.com/ryantam626/rice/master/installers/bootstrapping.sh | sh
 
 # Clone this repo
 git clone https://github.com/ryantam626/rice.git rice
