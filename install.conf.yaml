@@ -17,6 +17,7 @@
         path: dotfiles/rofi
     ~/.config/dconf:
         path: dotfiles/dconf
+        force: true
     ~/.ideavimrc:
         path: dotfiles/idea/.ideavimrc
     ~/.config/gtk-4.0:
