@@ -45,3 +45,7 @@ eval "$(pyenv init -)"
 # thefuck {{
 eval $(thefuck --alias)
 # }}
+
+# poetry {{
+export PATH="/home/ryan/.local/bin:$PATH"
+# }}
