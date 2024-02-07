@@ -1,5 +1,15 @@
-set clipboard^=unnamedplus,unnamed
-
+" Better search defaults
 set hlsearch
+set incsearch
 set ignorecase
 set smartcase
+
+let mapleader = " "
+" Escape to clean highlights
+nnoremap <silent> <esc> <esc>:noh<return><esc>
+nnoremap <silent> <leader>ac :%y<CR>
+
+set clipboard^=unnamedplus,unnamed
+
+set highlightedyank
+set surround
