@@ -209,3 +209,13 @@ install_kitty() {
 	sed -i "s|Icon=kitty|Icon=/home/$USER/.local/kitty.app/share/icons/hicolor/256x256/apps/kitty.png|g" ~/.local/share/applications/kitty*.desktop
 	sed -i "s|Exec=kitty|Exec=/home/$USER/.local/kitty.app/bin/kitty|g" ~/.local/share/applications/kitty*.desktop
 }
+
+install_gcloud() {
+	info "Installing gcloud.\n"
+	info "[gcloud] Downloading gcloud.\n"
+	mkdir -p ~/apps/gcloud
+	pushd ~/apps/gcloud
+	curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-463.0.0-linux-x86_64.tar.gz
+	tar -xf google-cloud-cli-463.0.0-linux-x86_64.tar.gz
+	popd
+}

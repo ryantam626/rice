@@ -49,3 +49,7 @@ eval $(thefuck --alias)
 # poetry {{
 export PATH="/home/ryan/.local/bin:$PATH"
 # }}
+
+# gcloud {{
+export PATH="/home/ryan/apps/gcloud/google-cloud-sdk/bin:$PATH"
+# }}

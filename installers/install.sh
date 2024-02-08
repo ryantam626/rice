@@ -21,6 +21,7 @@ install_gnome_extensions
 install_pyenv
 install_kitty
 install_utils
+install_gcloud
 # Placed last because it requires user input
 install_omz_and_plugins
 
