@@ -13,3 +13,12 @@ set clipboard^=unnamedplus,unnamed
 
 set highlightedyank
 set surround
+set ideajoin
+
+
+" Make jupyter support a little bit better by providing way to jump to
+" top/bottom of cell
+nmap ]c <Action>(EditorPageDown)
+nmap [c <Action>(EditorPageUp)
+vmap ]c <Action>(EditorPageDownWithSelection)
+vmap [c <Action>(EditorPageUpWithSelection)
