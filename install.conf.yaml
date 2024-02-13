@@ -29,3 +29,6 @@
     ~/.local/share/themes/ryan-theme:
         path: dotfiles/themes/ryan-theme
         force: true
+    ~/.xinitrc:
+        path: dotfiles/X/.xinitrc
+        force: true
