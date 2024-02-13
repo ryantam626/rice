@@ -53,3 +53,14 @@ export PATH="/home/ryan/.local/bin:$PATH"
 # gcloud {{
 export PATH="/home/ryan/apps/gcloud/google-cloud-sdk/bin:$PATH"
 # }}
+
+# Some common aliases that are shared across my machines
+alias copy="xsel -b"
+alias clc="git rev-parse HEAD | copy"  # Copy last commit hash
+alias gc-="git checkout -"
+alias gcn="git commit --no-verify"
+alias gcor='gco $(grecent | fzf)'
+alias gma="git checkout master"
+alias grecent="git for-each-ref --sort=-committerdate --count=20 --format='%(refname:short)' refs/heads/"
+alias gsh="git show"
+alias rt="gb | grep rt."
