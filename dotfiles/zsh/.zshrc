@@ -11,7 +11,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 DISABLE_AUTO_TITLE="true"
 export EDITOR="nvim"
 
-plugins=(git z fzf zsh-completions zsh-syntax-highlighting docker docker-compose task)
+plugins=(git fzf zsh-completions zsh-syntax-highlighting docker docker-compose task)
 zstyle ':completion:*:*:make:*' tag-order 'targets'
 autoload -Uz compinit && compinit
 
@@ -64,3 +64,7 @@ alias gma="git checkout master"
 alias grecent="git for-each-ref --sort=-committerdate --count=20 --format='%(refname:short)' refs/heads/"
 alias gsh="git show"
 alias rt="gb | grep rt."
+
+# zoxide {{
+eval "$(zoxide init zsh)"
+# }}

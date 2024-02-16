@@ -53,6 +53,9 @@ install_omz_and_plugins() {
 	git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 	git clone https://github.com/sawadashota/go-task-completions.git ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/task
+
+	# zoxide
+	curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/v0.9.3/install.sh | bash
 }
 
 install_chrome() {
