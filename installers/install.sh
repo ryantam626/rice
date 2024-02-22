@@ -17,6 +17,7 @@ install_fonts
 install_wayland_rofi_fork
 install_webstorm
 install_pycharm
+install_idea
 install_gnome_extensions
 install_pyenv
 install_kitty

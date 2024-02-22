@@ -182,6 +182,26 @@ install_pycharm() {
 	sudo ln -s ~/apps/pycharm-2023.3.3/bin/pycharm.sh /usr/local/bin/pycharm
 }
 
+install_idea() {
+	info "Installing Idea.\n"
+	info "[idea] Downloading.\n"
+	mkdir -p /tmp/idea
+	wget https://download.jetbrains.com/idea/ideaIU-2023.3.4.tar.gz -P /tmp/idea
+	wget https://download.jetbrains.com/idea/ideaIU-2023.3.4.tar.gz.sha256 -P /tmp/idea
+
+	info "[idea] Checksum.\n"
+	pushd /tmp/idea
+	sha256sum -c ideaIU-2023.3.4.tar.gz.sha256
+
+	info "[idea] Unzip.\n"
+	mkdir -p ~/apps
+	tar xzf idea*.tar.gz -C ~/apps
+	popd
+	rm -rf /tmp/idea
+
+	info "[idea] Symlink.\n"
+	sudo ln -s ~/apps/idea-IU-233.14475.28/bin/idea.sh /usr/local/bin/idea
+}
 
 install_gnome_extensions() {
 	info "Installing Gnome Extensions.\n"
