@@ -153,7 +153,7 @@ install_webstorm() {
 
 	info "[webstorm] Unzip.\n"
 	mkdir -p ~/apps
-	sudo tar xzf WebStorm-*.tar.gz -C ~/apps
+	tar xzf WebStorm-*.tar.gz -C ~/apps
 	popd
 	rm -rf /tmp/webstorm
 
