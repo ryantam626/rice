@@ -75,7 +75,8 @@ install_utils() {
 	info "[utils] Downloading some utils from apt.\n"
 	# `xsel` for clipboard in neovim 
 	# `fzf` for fuzzy finder
-	$apt_install_quiet xsel fzf
+	# `flameshot` for better screenshotting
+	$apt_install_quiet xsel fzf flameshot
 	
 	info "[utils] Downloading task.\n"
 	sudo sh -c "$(curl --location https://taskfile.dev/install.sh)" -- -d -b /usr/local/bin
