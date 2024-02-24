@@ -64,6 +64,7 @@ alias gma="git checkout master"
 alias grecent="git for-each-ref --sort=-committerdate --count=20 --format='%(refname:short)' refs/heads/"
 alias gsh="git show"
 alias rt="gb | grep rt."
+alias gs="git status"  # To fix my usual typo
 
 # zoxide {{
 eval "$(zoxide init zsh)"
