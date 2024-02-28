@@ -69,3 +69,8 @@ alias gs="git status"  # To fix my usual typo
 # zoxide {{
 eval "$(zoxide init zsh)"
 # }}
+
+# Edit current command line {{
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^[e' edit-command-line
