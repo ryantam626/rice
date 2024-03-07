@@ -13,7 +13,7 @@ set clipboard^=unnamedplus,unnamed
 
 set highlightedyank
 set surround
-set ideajoin
+set noideajoin
 
 
 " Make jupyter support a little bit better by providing way to jump to
